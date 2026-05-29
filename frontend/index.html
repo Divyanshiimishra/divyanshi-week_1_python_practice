@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System UI - Presentation Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <section class="panel librarian-nexus">
+            <aside class="sidebar">
+                <div class="logo"><i class="fa-solid fa-layer-group"></i></div>
+                <nav class="nav-menu">
+                    <a href="#" class="active"><i class="fa-solid fa-gauge-high"></i></a>
+                    <a href="#"><i class="fa-solid fa-clock-rotate-left"></i></a>
+                    <a href="#"><i class="fa-solid fa-sliders"></i></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                </nav>
+                <div class="sidebar-footer">
+                    <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+            </aside>
+
+            <main class="dash-content">
+                <header class="dash-header">
+                    <h2>Dashboard</h2>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="db-search" placeholder="Search logs or genres...">
+                    </div>
+                    
+                    <div class="timeline-header-group">
+                        <h3>Timeline</h3>
+                        <span class="arrow-indicator">➔</span>
+                    </div>
+
+                    <div class="timeline-stream" id="timelineStream">
+                        <div class="timeline-card check-out" data-tags="climate change central">
+                            <span class="status-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <div class="card-details">
+                                <h4>Books checked out</h4>
+                                <p>by Climate change at <strong>Central</strong></p>
+                                <small>4 hours ago</small>
+                            </div>
+                            <span class="action-arrow">➔</span>
+                        </div>
+
+                        <div class="timeline-card return" data-tags="culture change central">
+                            <span class="status-icon"><i class="fa-solid fa-rotate-left"></i></span>
+                            <div class="card-details">
+                                <h4>Book returned</h4>
+                                <p>by Culture change at <strong>Central</strong></p>
+                                <small>4 hours ago</small>
+                            </div>
+                            <span class="action-arrow">➔</span>
+                        </div>
+
+                        <div class="timeline-card check-out" data-tags="bocernveed central">
+                            <span class="status-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <div class="card-details">
+                                <h4>Books checked out</h4>
+                                <p>by Bocernveed at <strong>Central</strong></p>
+                                <small>4 hours ago</small>
+                            </div>
+                            <span class="action-arrow">➔</span>
+                        </div>
+                    </div>
+                </header>
+            </main>
+
+            <section class="work-canvas">
+                <div class="canvas-header">
+                    <span>Notifications</span>
+                    <div class="user-badge">
+                        <button class="btn-profile"><i class="fa-solid fa-user"></i> Profile</button>
+                        <i class="fa-regular fa-bell notification-bell"></i>
+                    </div>
+                </div>
+
+                <div class="smart-prompt-box">
+                    <p>I'm looking for a book on <span class="highlight">climate change</span> available now at <span class="highlight">Central.</span></p>
+                </div>
+
+                <div class="smart-shelf-container">
+                    <div class="shelf-title">
+                        <h3>Smart Shelf</h3>
+                        <span>➔</span>
+                    </div>
+                    <div class="bubble-chart-mock">
+                        <div class="center-bubble">Genres</div>
+                        <div class="bubble b1 active-bubble" data-target="climate">Climate</div>
+                        <div class="bubble b2" data-target="culture">Culture</div>
+                        <div class="bubble b3">Dystopian</div>
+                        <div class="bubble b4">Popular</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="panel member-hub">
+            <header class="hub-header">
+                <span class="brand-nav">Home</span>
+                <div class="auth-buttons">
+                    <a href="#" class="btn-text">Log in</a>
+                    <a href="#" class="btn-solid">Sign up</a>
+                </div>
+            </header>
+
+            <h1 class="hero-title">Your Next<br>Odyssey.</h1>
+
+            <div class="curated-section">
+                <div class="section-title">
+                    <h3>Curated Journeys</h3>
+                    <span>➔</span>
+                </div>
+                <div class="journey-grid">
+                    <div class="journey-card dark-card book-trigger">
+                        <div class="book-stack">
+                            <div class="mini-book book-color-1"></div>
+                            <div class="mini-book book-color-2"></div>
+                        </div>
+                        <h4>Dystopian Worlds</h4>
+                        <p>Explore realities, trends, and speculative futures.</p>
+                        <button class="btn-card-action">Learn more ➔</button>
+                    </div>
+
+                    <div class="journey-container">
+                        <div class="journey-card coral-card">
+                            <h4>Dystopian Histories</h4>
+                            <p>Contextual timelines and histories.</p>
+                            <button class="btn-pill-sm">Contain more ➔</button>
+                        </div>
+                        <div class="journey-card green-card">
+                            <h4>Hidden Histories</h4>
+                            <p>Uncovering local and secret files.</p>
+                            <button class="btn-pill-sm">Learn more ➔</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-section">
+                <div class="section-title">
+                    <h3>My Odyssey Queue</h3>
+                    <span>➔</span>
+                </div>
+
+                <div class="queue-stack">
+                    <div class="queue-card item-current book-trigger">
+                        <div class="queue-thumb"></div>
+                        <div class="queue-info">
+                            <span class="badge-status">Current reads</span>
+                            <h4>Dystopian Worlds</h4>
+                            <p>Uniden Honkor • By Green Balcam</p>
+                            <button class="btn-text-link">Learn more ➔</button>
+                        </div>
+                    </div>
+
+                    <div class="queue-card item-past">
+                        <div class="queue-thumb past-thumb"></div>
+                        <div class="queue-info">
+                            <span class="badge-status">Past</span>
+                            <h4>Hidden Histories</h4>
+                            <p>Uniden Weaker • By Green Balaon</p>
+                            <p class="excerpt-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel book-profile">
+            <div class="profile-hero-split">
+                <div class="cover-wrapper">
+                    <div class="main-book-cover">
+                        <div class="cover-inner-text">
+                            <h3>GREEN BALGARD</h3>
+                            <p>MILLEM H. BETINTON</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book-metadata">
+                    <span class="meta-label">Editorial</span>
+                    <h2 class="book-title">The Liorrtng And Active Author</h2>
+                    <p class="book-author">By Green Balcarn</p>
+                    <p class="book-synopsis">The author's book round this availability book overview and anatomy, standing out uniquely amidst standard descriptive rules. Every aspect can be structured cleanly for modern user layouts.</p>
+                    <div class="meta-actions">
+                        <button class="btn-meta-primary">Contain ➔</button>
+                        <button class="btn-meta-secondary">Share <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-analytics">
+                <div class="analytics-left">
+                    <div class="analytics-header">
+                        <h3>Availability</h3>
+                        <span>➔</span>
+                    </div>
+                    <p class="sub-label">Across branches — Branches — Branches</p>
+                    
+                    <div class="graph-container">
+                        <svg viewBox="0 0 500 150" class="metric-graph">
+                            <path d="M0,120 Q75,50 150,90 T300,40 T450,110 T500,80" fill="none" stroke="#10B981" stroke-width="3" />
+                            <path d="M0,90 Q75,110 150,60 T300,110 T450,50 T500,30" fill="none" stroke="#EF4444" stroke-width="2" stroke-dasharray="4" />
+                            <circle cx="150" cy="90" r="5" fill="#10B981" />
+                            <circle cx="300" cy="110" r="5" fill="#EF4444" />
+                        </svg>
+                        <div class="graph-labels">
+                            <span>Jan</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ratings-matrix">
+                    <p class="matrix-title">User ratings</p>
+                    <div class="rating-row"><span>5.0 ★★★★★</span><div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div></div>
+                    <div class="rating-row"><span>4.0 ★★★★☆</span><div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div></div>
+                    <div class="rating-row"><span>3.0 ★★★☆☆</span><div class="bar-bg"><div class="bar-fill" style="width: 25%;"></div></div></div>
+                    
+                    <div class="profile-footer-actions">
+                        <button class="btn-solid-dark">Rating</button>
+                        <button class="btn-outline-dark">Content ➔</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("db-search");
+            const timelineCards = document.querySelectorAll(".timeline-card");
+            const genreBubbles = document.querySelectorAll(".bubble");
+
+            if (searchInput) {
+                searchInput.addEventListener("input", (e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    timelineCards.forEach(card => {
+                        const tags = card.getAttribute("data-tags").toLowerCase();
+                        card.style.display = tags.includes(query) ? "flex" : "none";
+                    });
+                });
+            }
+
+            genreBubbles.forEach(bubble => {
+                bubble.addEventListener("click", () => {
+                    genreBubbles.forEach(b => b.classList.remove("active-bubble"));
+                    bubble.classList.add("active-bubble");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
